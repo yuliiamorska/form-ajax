@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>опитування</title>
+</head>
+
+<body style="background-color: antiquewhite">
+    <header>
+        <h1>Соціологічне опитування:"Чи хотіли б Ви жити закордоном?"</h1>
+    </header><br>
+    <div>
+        <form>
+            <label>П.І.П.
+            <input type="text">
+        </label>
+            <br>
+            <label>Вік:
+            <input type="number" name="quantity" min="1" max="201">
+        </label>
+            <br>
+            <label>
+            <input type="radio" name="gender" value="male">Male
+        </label>
+            <label>
+        <input type="radio" name="gender" value="female">Female
+        </label>
+            <label>
+            <input type="radio" name="gender" value="other">Other
+        </label>
+            <br>
+            <label>Чи бували Ви закордоном?
+            <input type="radio" name="answer" value="yes">Так
+        </label>
+            <label>  
+            <input type="radio" name="answer" value="no">Ні
+        </label>
+            <br>
+            <label>Якщо так, то де саме?
+            <input type="text">
+        </label>
+            <br>
+            <label>Чи важливий для Вас клімат?
+            <input type="text">
+        </label>
+            <br>
+            <label>Чи влаштовує Вас життя в Україні?
+            <input type="text">
+        </label>
+            <br>
+            <label>Чи замислювались Ви над роботою та життям закордоном?
+            <input type="text">
+        </label>
+            <br>
+            <fieldset>
+                <p>Чим Ви займаєтесь зараз?
+                    <select>
+                <option value="s">Студент</option>
+                <option value="e">Працівник</option>
+                <option value="b">Бізнесмен</option>
+                <option value="un">Безробітній</option>
+            </select>
+                </p>
+            </fieldset>
+            <br>
+            <textarea name="textarea" cols="30" rows="10" placeholder="Напишіть Вашу думку про рівень життя в Україні."></textarea>
+            <input type="submit">
+        </form>
+    </div>
+    <h2 id="thanks" style="display:none;">Thank you!</h2>
+    <h2 id="incorrect" style="display:none;">Form incorrect!</h2>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
